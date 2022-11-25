@@ -1,0 +1,121 @@
+/*Gerillass mixins*/
+.hero .background {
+  height: 66vh;
+}
+
+h1 {
+  font-family: poppins;
+}
+
+h2 {
+  font-family: poppins;
+}
+
+h3 {
+  font-family: poppins;
+}
+
+p {
+  font-family: poppins;
+}
+
+blockquote {
+  font-family: poppins;
+}
+
+.lettrine:first-letter {
+  font-size: 570%;
+  font-weight: 600;
+  float: left;
+  margin-top: 5px;
+  line-height: 0.7;
+  margin-right: 10px;
+}
+
+.share {
+  font-family: poppins;
+}
+
+header {
+  background: #e2001a;
+  border-bottom: 0;
+  transition: all 0.2s;
+}
+header.neg {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header.headroom--unpinned {
+  transform: translateY(-100%);
+  transition: all 0.2s;
+}
+
+.share {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+.share .icon-share, .share .icon-cross {
+  opacity: 0;
+}
+.share .icon-share.is-visible, .share .icon-cross.is-visible {
+  opacity: 1;
+}
+.share .share-popup {
+  width: calc(100vw - 2.9rem);
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  transform: translateY(-5px);
+}
+@media (min-width: 768px) {
+  .share .share-popup {
+    width: 300px;
+  }
+}
+.share .share-popup.is-visible {
+  opacity: 1;
+  transition: all 0.2s;
+  visibility: visible;
+  transform: translateY(0);
+}
+.share .share-popup .triangle {
+  content: "";
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent transparent white;
+  border-width: 0 10px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-7px, -100%);
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: blue;
+}
+
+.container {
+  margin: auto;
+}
+
+.js-copied {
+  left: 50%;
+  bottom: 30px;
+  font-family: "Poppins";
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 5px);
+  transition: all 0.2s;
+}
+.js-copied.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  transition: all 0.2s;
+}

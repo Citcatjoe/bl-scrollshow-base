@@ -1,0 +1,25 @@
+.container
+{
+    margin: auto;
+}
+
+.js-copied
+{
+    left: 50%;
+    bottom: 30px;
+    font-family: 'Poppins';
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 5px);
+    transition: all .2s;
+
+    &.is-visible
+    {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+        transition: all .2s;
+    }
+}
+
+

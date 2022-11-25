@@ -1,0 +1,186 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html> 
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		{# <?php include 'hb_card_tp.php'; ?> #}
+		{{ block('head_brand') }}
+	</head>
+
+	<body class="bg-gray-200">
+		{# {{ block('bar_brand') }} #}
+		{{ block('header') }}
+		{# <?php include 'hb_header_tp.php'; ?> #}
+		
+		<div class="container max-w-screen-2xl relative bg-white">
+		<figure class="hero w-full">
+			<div class="background w-full h-full bg-white bg-center bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/___opening.jpg');">
+			<div class="container px-4 py-4 max-w-2xl absolute bottom-4">
+				<h1 class="text-3xl md:text-4xl text-white font-semibold">Depuis qu'Elon Musk a repris Twitter, les stars suppriment leur compte</h1>
+			</div>
+			</div>
+			<figcaption class="container px-4 max-w-xl text-xs">Ici ma belle légende en rapport avec l'illustration d'ouverture héhé c'est très beau waw</figcaption>
+		</figure>
+		</div>
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white">
+			<div class="chapeau container py-8 max-w-2xl">
+				<h2 class="text-xl md:text-2xl">Depuis qu'Elon Musk a repris le réseau social, de plus en plus de stars quittent la plateforme. Elles considèrent que le réseau social n'est «plus sûr». Même son ex-petite amie Amber Heard a supprimé son compte Twitter.</h2>
+			</div>            
+
+			<div class="container authors flex py-4 max-w-2xl border-y">
+				<div class="author w-52">
+					<a href="" class="flex items-center">
+					<img src="img/fabien-goubet.png" alt="Portrait de Fabien Goubet" class="rounded-full w-12 mr-2.5">
+					<div class="align-text-bottom text-xs">
+						Par <span class="inline-block font-extrabold underline">Fabien Goubet</span>
+						<span class="inline-block">Journaliste Blick</span></div>
+					</a>
+				</div>
+				<div class="author w-52">
+					<a href="" class="flex items-center">
+					<img src="img/fabien-goubet.png" alt="Portrait de Fabien Goubet" class="rounded-full w-12 mr-2.5">
+					<div class="align-text-bottom text-xs">
+						Par <span class="inline-block font-extrabold underline">Fabien Goubet</span>
+						<span class="inline-block">Journaliste Blick</span></div>
+					</a>
+				</div>
+			</div>
+
+			<section>
+				<div class="container pt-8 pb-4 max-w-2xl">
+				<p class="lettrine text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<blockquote class="mt-12 mb-12 border-l-4 border-black pl-4 block">
+					<span class="text-5xl font-semibold leading-normal bg-violet-100">« Passer pour un idiot aux yeux d'un imbécile est une volupté de fin gourmet »</span>
+					<span class="mt-4 block text-left font-semibold">— Jacques Chirac, Président de la République</span>
+				</blockquote>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				</div>
+			</section>
+
+			<figure class="-ml-4 -mr-4">
+				<div class="w-full">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs px-4">Bloc image full largeur</figcaption>
+				</div>
+				</div>
+			</figure>
+
+			<section>
+				<div class="container py-4 max-w-2xl">
+				<h3 class="text-3xl font-semibold mb-6">Mon inter-titre viendra se placer ici</h3>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<figure class="w-4/12 mr-8 mb-4 float-left">
+					<img src="img/___medaillon.jpeg" alt="">
+					<figcaption class="text-xs">
+						Ici une légende en rapport avec un medaillon
+					</figcaption>
+				</figure>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				</div>
+			</section>
+
+			<figure>
+				<div class="container py-4 max-w-2xl">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs">Bloc image calé sur la colonne de texte</figcaption>
+				</div>
+				</div>
+			</figure>
+
+			<section>
+				<div class="container py-4 max-w-2xl bg-slate-300">
+				<h3 class="text-3xl font-semibold mb-6">Mon inter-titre viendra se placer ici</h3>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				</div>
+			</section>
+
+			<figure>
+				<div class="container py-4 max-w-xs md:max-w-sm">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs">image calé intérieur de la colonne de texte</figcaption>
+				</div>
+				</div>
+			</figure>
+
+			<section>
+				<div class="container py-4 max-w-2xl bg-slate-300">
+				<h3 class="text-3xl font-semibold mb-6">Mon inter-titre viendra se placer ici</h3>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="text-lg font-light mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				</div>
+			</section>
+
+			<figure>
+				<div class="container py-4 max-w-6xl">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs">Bloc image calé entre gull width la colonne de texte</figcaption>
+				</div>
+				</div>
+			</figure>
+
+			<!-- <figure>
+				<div class="container px-12 py-4 w-full flex">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption>
+				</div>
+				</div>
+			</figure>
+
+			<figure>
+				<div class="container px-4 py-4 max-w-xs sm:max-w-md grid gap-4 grid-cols-2">
+				<div class="">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption>
+				</div>
+				<div class="">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption>
+				</div>
+				</div>
+			</figure> -->
+
+			<section>
+				<div class="container py-4 max-w-2xl bg-slate-300">
+				<h3 class="text-3xl font-semibold mb-6">Mon inter-titre viendra se placer ici</h3>
+				<p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				<p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus nobis earum rerum quis ut. Quam ducimus quo, sed vero veniam recusandae soluta maxime natus aliquid dolore pariatur, non ratione?</p>
+				</div> 
+			</section>
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+			{# <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> #}
+			<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
+			<!-- <script src="js/plugins.js"></script> -->
+			<script src="js/header.js"></script>
+			<!-- <script src="js/headroom.min.js"></script> -->
+			<script src="https://cdn.tailwindcss.com"></script>
+
+			<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+			<script>
+				window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+				ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+			</script>
+			<script src="https://www.google-analytics.com/analytics.js" async></script>
+		</div>    
+	</body>
+</html>
