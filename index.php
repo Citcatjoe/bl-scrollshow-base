@@ -56,10 +56,10 @@ if (isset($_GET['page']) && !empty($_GET['page'])) {
 $content = file_get_contents($template);
 
 
-if (strpos($content, "block('bar_brand')") === false) {
+// if (strpos($content, "block('bar_brand')") === false) {
 
-	throw new Exception("Missing mandatory blocks!", 1);
-}
+// 	throw new Exception("Missing mandatory blocks!", 1);
+// }
 
 // if (strpos($content, "block('head_brand')") === false ||
 // 	strpos($content, "block('bar_brand')") === false ||

@@ -1545,6 +1545,84 @@
       "oAP" : "\/hb_card_tp.php",
       "oF" : 0
     },
+    "\/img\/___0.jpeg" : {
+      "ft" : 16384,
+      "iS" : 988943,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/img\/___0.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/___1.jpg" : {
+      "ft" : 16384,
+      "iS" : 470747,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/img\/___1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/___2.jpeg" : {
+      "ft" : 16384,
+      "iS" : 368026,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/img\/___2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/___3.jpg" : {
+      "ft" : 16384,
+      "iS" : 172545,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/img\/___3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/___4.jpeg" : {
+      "ft" : 16384,
+      "iS" : 92285,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/img\/___4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/___5.jpeg" : {
+      "ft" : 16384,
+      "iS" : 87592,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/img\/___5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/___medaillon.jpeg" : {
       "ft" : 16384,
       "iS" : 35875,
@@ -1861,6 +1939,17 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/js\/debug.addIndicators.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/debug.addIndicators.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/js\/function-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1916,6 +2005,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/js\/isInViewport.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/isInViewport.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/js\/main-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1956,6 +2056,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/js\/plugins-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/ScrollMagic.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/ScrollMagic.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -7078,7 +7189,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 689520013.15429795,
-    "displayValue" : "bl-longread-base",
+    "displayValue" : "bl-scrollshow-base",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0

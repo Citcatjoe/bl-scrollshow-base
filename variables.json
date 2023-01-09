@@ -3,8 +3,8 @@
 	"description": "La description du format ici",
 	"authors": "Les auteurs séparés par des virgules",
 	"imgSocial": "social.jpg",
-	"headertheme": "neg", 
-	"headerBoxed": true,
+	"headertheme": "normal", 
+	"headerBoxed": false,
 	"pubDate": "2020-07-23T11:00:00+00:00",
 	"partner": {
 		"logo": "img/empty.png",
