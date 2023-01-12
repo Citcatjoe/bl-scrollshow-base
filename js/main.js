@@ -19,6 +19,13 @@
     //     var html = template({'card':data});
     //     $(".authors").prepend(html); 
     // }
+    setTimeout(function() { 
+        $('body').addClass('is-visible');
+    }, 1000);
+
+    setTimeout(function() { 
+        $('.scroller').addClass('is-visible');
+    }, 6000);
     
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -64,6 +71,7 @@
             {
                 //alert('nextImage')
                 nextImage();
+                $('.scroller').removeClass('is-visible');
             }
             else
             {
@@ -79,6 +87,7 @@
 
                 //alert('previousImage');
                 previousImage();
+                $('.scroller').addClass('is-visible');
             } 
         })
         .setClassToggle(".container", "active") // add class toggle
@@ -202,7 +211,34 @@
         .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 
+        new ScrollMagic.Scene({triggerElement: ".trigger6"})
+        .on("enter", function (event) {
+            //alert(event.scrollDirection);
+            if(event.scrollDirection == 'FORWARD')
+            {
+                //alert('nextImage')
+                nextImage();
+            }
+            else
+            {
+                //alert('previousImage');
+            } 
+        })
+        .on("leave", function (event) {
+            //alert(event.scrollDirection);
+            if(event.scrollDirection == 'FORWARD')
+            {}
+            else
+            {
 
+                //alert('previousImage');
+                previousImage();
+            } 
+        })
+        .setClassToggle(".container", "active") // add class toggle
+        .triggerHook(0.8)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
         
 
         function previousImage(){

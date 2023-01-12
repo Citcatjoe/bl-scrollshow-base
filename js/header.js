@@ -3,64 +3,77 @@
 
 jQuery(document).ready(function($) 
 {
-	var share = $('.share'),
-		sharePopup = $('.share-popup'),
-		iconShare = $('.icon-share'),
-		iconCross = $('.icon-cross'),
-		jsCopy = $('.js-copy'),
-		jsCopied = $('.js-copied');
-	
-	share.click(function(e){if (sharePopup.hasClass('is-visible')){closeSharePopup();}else{openSharePopup();}});
+	jQuery(document).ready(function($) 
+	{
+		var overlay =$('.overlay'),
+			jsCopy = $('.copy'),
+			jsCopied = $('.copied');
+			heroHeight = $('.hero').height();
+		//--- ASIDE RIGHT ---//
+		var asideRToggle = $('.aside-r-toggle'),
+			asideR = $('.aside-r'),
+			btnCloseAsideR = asideR.find('.btn-close-aside-r');
+			asideRToggle.click(function(e){if (asideR.hasClass('is-visible')){closeAsideR();}else{openAsideR();}});
+			btnCloseAsideR.click(function(e){
+			closeAsideR()
+		});
+		function openAsideR(){
+			asideR.removeClass('translate-x-full');
+			closeAsideL();
+			overlay.addClass('is-visible');
+		}
+		function closeAsideR(){
+			asideR.addClass('translate-x-full');
+			overlay.removeClass('is-visible');
+		}
+		//--- ASIDE LEFT ---//
+		var asideLToggle = $('.aside-l-toggle'),
+			asideL = $('.aside-l'),
+			btnCloseAsideL = asideL.find('.btn-close-aside-l');
+			asideLToggle.click(function(e){if (asideL.hasClass('is-visible')){closeAsideL();}else{openAsideL();}});
+			btnCloseAsideL.click(function(e){
+			closeAsideL()
+		});
+		function openAsideL(){
+			asideL.removeClass('-translate-x-full');
+			closeAsideR();
+			overlay.addClass('is-visible');
+		}
+		function closeAsideL(){
+			asideL.addClass('-translate-x-full');
+			overlay.removeClass('is-visible');
+		}
+		overlay.click(function(e){
+			closeAsideL();
+			closeAsideR();
+		});
+		jsCopy.click(function(e){
+			e.stopPropagation();
+			copyToClipboard();
+			notifyCopied();
+		});
+		function copyToClipboard() {
+			var dummy = document.createElement('input'),
+			text = window.location.href;
+			document.body.appendChild(dummy);
+			dummy.value = text;
+			dummy.select();
+			document.execCommand('copy');
+			document.body.removeChild(dummy);
+		}
+		function notifyCopied() {
+			jsCopied.addClass('is-visible'); 
+			closeAsideR();
+			setTimeout(function() { 
+				jsCopied.removeClass('is-visible');
+			}, 2000);
+		}
+		var header = document.querySelector("header");
+		var headroom = new Headroom(header, {
+			"offset": heroHeight,
+			"tolerance": 1
+		});
 
-	sharePopup.mouseleave(function() {
-		closeSharePopup();
+		headroom.init();
 	});
-
-	function openSharePopup(){
-		sharePopup.addClass('is-visible');
-		iconShare.removeClass('is-visible');
-		iconCross.addClass('is-visible');
-	}
-	
-	function closeSharePopup(){
-		sharePopup.removeClass('is-visible');
-		iconShare.addClass('is-visible');
-		iconCross.removeClass('is-visible');
-	}
-
-	sharePopup.click(function(e){
-        e.stopPropagation();
-	});
-
-	jsCopy.click(function(e){
-		e.stopPropagation();
-        copyToClipboard();
-		notifyCopied();
-	});
-
-    function copyToClipboard() {
-		var dummy = document.createElement('input'),
-		text = window.location.href;
-		document.body.appendChild(dummy);
-		dummy.value = text;
-		dummy.select();
-		document.execCommand('copy');
-		document.body.removeChild(dummy);
-	}
-
-	function notifyCopied() {
-		jsCopied.addClass('is-visible'); 
-		closeSharePopup();
-		setTimeout(function() { 
-			jsCopied.removeClass('is-visible');
-		}, 1000);
-	}
-
-	var header = document.querySelector("header");
-	var headroom = new Headroom(header, {
-		"offset": 500,
-		"tolerance": 20
-	  });
-
-	  headroom.init();
 });

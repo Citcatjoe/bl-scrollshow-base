@@ -7,9 +7,12 @@ header
     {
         background: transparent;
         border-bottom: 1px solid rgba(255, 255, 255, .2);  
+
+        &.headroom--not-top{ background: rgba(0, 0, 0, .5); transition: all .2s; }
     }
     &.headroom--top{}
     &.headroom--pinned{}
+    
     &.headroom--unpinned
     {
         transform: translateY(-100%);
@@ -17,7 +20,7 @@ header
     }
 }
 
-.share
+.btn
 {
     border-radius: 9999px;
     border: 1px solid rgba(255, 255, 255, .2);
@@ -36,7 +39,7 @@ header
 
     .share-popup
     {
-        width: calc(100vw - 2.9rem);
+        width: calc(100vw - 2rem);
         background-color: white;
         opacity: 0;
         visibility: hidden; 
@@ -68,6 +71,79 @@ header
             right: 0;
             transform: translate(-7px, -100%);
         }
+    }
+}
+
+.copied
+{
+    left: 50%;
+    bottom: 30px;
+    font-family: 'Poppins';
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 5px);
+    transition: all .2s;
+
+    &.is-visible
+    {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);  
+        transition: all .2s;
+    }
+}
+
+.aside-l
+{
+    transition: all .2s;
+    // transform: translateX(-100%);
+    &.-translate-x-full { transition: all .2s; }
+
+    ul li { border-bottom: 1px solid #eeeeee; }
+}
+.aside-l .aside-header
+{
+    border-bottom: 1px solid #eeeeee;
+
+    .btn
+    {
+        background: #eeeeee;
+    }
+
+    
+}
+
+.aside-r
+{
+    transition: all .2s;
+    // transform: translateX(-100%);
+    &.-translate-x-full { transition: all .2s; }
+
+    ul li { border-bottom: 1px solid #eeeeee; }
+}
+.aside-r .aside-header
+{
+    border-bottom: 1px solid #eeeeee;
+
+    .btn
+    {
+        background: #eeeeee;
+    }
+
+    
+}
+
+.overlay
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+
+    &.is-visible 
+    {
+        opacity: .5;
+        visibility: visible;
+        transition: all .2s;
     }
 }
 

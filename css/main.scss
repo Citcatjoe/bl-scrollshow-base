@@ -23,7 +23,7 @@
 // GENERAL LAYOUT
 //=====================================================================//
 //@import "layout"; /*Header, section, article, footer...*/
-@import "hero"; 
+@import "hero";  
 
 //=====================================================================//
 // ELEMENTS
@@ -32,10 +32,10 @@
 //@import "timeline"; 
 @import "fonts"; 
 @import "header"; 
-@import "components"; 
+@import "scroller"; 
 
 //=====================================================================//
 // FIX
 //=====================================================================//
-@import "specials"; 
+@import "base";  
 //@import "shame"; 
