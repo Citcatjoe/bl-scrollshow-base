@@ -52,11 +52,17 @@
         // },
     });
 
-   
-
-    
+    // var triggers = document.querySelectorAll(".trigger");
     var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: '100%'}});
 
+    // for (var tl=0; tl<triggers.length; tl++) {
+		
+    //    console.log(tl);
+    //    new ScrollMagic.Scene({triggerElement: "#trigger"+tl})
+    //    .on("enter", function (event) {
+    //           console.log('connard');
+    //    }).triggerHook(0.8).addTo(controller); 
+    // }
     new ScrollMagic.Scene({triggerElement: "#trigger0"})
     .on("enter", function (event) {
             var i = parseInt($('#trigger0').attr('id').slice(-1));
@@ -124,6 +130,7 @@
         swiper.slideTo(i+1);
     }).triggerHook(0.8).addTo(controller);
         
+    
     
 
 })(jQuery);
