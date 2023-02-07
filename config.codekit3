@@ -9069,7 +9069,7 @@
     },
     "\/favicon\/android-chrome-144x144.png" : {
       "ft" : 32768,
-      "iS" : 3181,
+      "iS" : 3157,
       "oA" : 0,
       "oAP" : "\/favicon\/android-chrome-144x144.png",
       "oF" : 0,
@@ -9082,7 +9082,7 @@
     },
     "\/favicon\/apple-touch-icon.png" : {
       "ft" : 32768,
-      "iS" : 1876,
+      "iS" : 3157,
       "oA" : 0,
       "oAP" : "\/favicon\/apple-touch-icon.png",
       "oF" : 0,
@@ -9093,9 +9093,17 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/favicon\/browserconfig.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/favicon\/browserconfig.xml",
+      "oF" : 0
+    },
     "\/favicon\/favicon-16x16.png" : {
       "ft" : 32768,
-      "iS" : 706,
+      "iS" : 688,
       "oA" : 0,
       "oAP" : "\/favicon\/favicon-16x16.png",
       "oF" : 0,
@@ -9108,7 +9116,7 @@
     },
     "\/favicon\/favicon-32x32.png" : {
       "ft" : 32768,
-      "iS" : 962,
+      "iS" : 971,
       "oA" : 0,
       "oAP" : "\/favicon\/favicon-32x32.png",
       "oF" : 0,
@@ -9129,7 +9137,7 @@
     },
     "\/favicon\/mstile-150x150.png" : {
       "ft" : 32768,
-      "iS" : 3397,
+      "iS" : 3748,
       "oA" : 0,
       "oAP" : "\/favicon\/mstile-150x150.png",
       "oF" : 0,

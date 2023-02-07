@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#E20000">
     <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- FACEBOOK -->
 	<link rel="image_src" href="{{ app.url ~ imgSocial }}" />
@@ -32,10 +33,15 @@
 	<meta property="twitter:image" content="{{ app.url ~ imgSocial }}"/>
 	<meta property="twitter:image:src" content="{{ app.url ~ imgSocial }}">
 
-
-
 	<!-- CANONICAL URL -->
 	<link rel="canonical" href="{{ app.url }}"/>
+
+	 <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVVLW3LSNH"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	</script>
 {% endblock %}
 
 {% block header %}
