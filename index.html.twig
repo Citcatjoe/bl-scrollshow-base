@@ -4,45 +4,21 @@
 
 <html style="background:#202124;"> 
 	<head>
-		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		{# <?php include 'hb_card_tp.php'; ?> #}
 		{{ block('head_brand') }}
-
-		<!-- <script id="slide-template" type="text/x-handlebars-template">
-			{% verbatim %}
-				{{#each slide}}
-					<div class="swiper-slide {{#if hasBigTitle}}title{{/if}}" id="slide{{@index}}">
-					{{#if hasEpTitle}}
-						<span class="txt-episode">{{hasEpTitle}}</span>
-					{{/if}}
-					</div>
-				{{/each}}
-			{% endverbatim %}
-		</script> -->
-
 	</head>
 
-	<!-- Google tag (gtag.js) -->
-	<!-- <script async src=“https://www.googletagmanager.com/gtag/js?id=G-BVVLW3LSNH”></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag(‘js’, new Date());
-	gtag(‘config’, ‘G-BVVLW3LSNH’);
-	</script> -->
-
-	
-
 	<body>
+		{{ block('gtm') }}
 		{{ block('header') }}
 		<!-- IMAGES ONLY HERE -->
 		<div class="swiper scene fixed w-full bg-center bg-cover">
@@ -73,7 +49,6 @@
 		</div>
 		
 		<div class="container max-w-screen-2xl px-4 relative z-10">
-			<!-- <br><br><br><br><br><br><br><br><p class="avant bg-white">avant</p><br><p class="apres bg-white">apres</p> -->
 			
 
 			<section class="section0 container intro py-8 mb-96 max-w-6xl bg-transparent overflow-auto relative">
@@ -316,10 +291,8 @@
 			</section> 
 			
 			
-			<!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
 			<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
 			<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-			<!-- <script src="js/plugins.js"></script> -->
 			<script src="js/ScrollMagic.min.js"></script>
 			<!-- <script src="js/debug.addIndicators.min.js"></script> -->
 			<!-- <script src="js/isInViewport.min.js"></script> -->
